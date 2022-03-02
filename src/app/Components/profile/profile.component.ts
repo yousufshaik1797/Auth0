@@ -2,13 +2,11 @@ import { Component } from '@angular/core';
 import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
-  // moduleId: module.id,
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-
+    // moduleId:module.id,
+  selector: 'profile',
+  templateUrl: 'profile.component.html',
 })
-export class AppComponent {
+export class Profilecomponent {
   title = 'auth0';
-  redirectUri='http://localhost:4200/'
   constructor(public auth: AuthService) {}
 }
